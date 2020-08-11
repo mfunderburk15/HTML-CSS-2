@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 15px;
+    line-height: 26px;
+    color: white;
+}
+.background-image{
+    width: 100vw;
+    height: 100vh;
+    background: url("https://www.spacex.com/static/images/backgrounds/splashdown_1.jpg");
+    background-size: cover;
+}
+.header{
+    width: 100vw;
+    height: 110px;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-bar{
+    z-index: 2;
+}
+
+.nav-menu{
+    justify-content: center;
+}
+.spacex{
+    width:225px;
+    height:110px;
+    background-color: white;
+    margin: 0px 20px 0 40px;
+}
+
+.options{
+    display: flex;
+    list-style: none;
+    justify-content: flex;
+    position: fixed;
+}
+
+.nav{
+    transform: scale(.76, 1);
+    margin: 40px 0px;
+    font-weight: bold;
+}
+
+.menu-btn{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    float: right;
+    display: flex;
+    position: fixed;
+    top: 43px;
+    right: 65px;
+}
+
+.menu-btn_burger{
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: white;
+    float: right;
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: white;
+    float: right;
+}
+
+.menu-btn_burger::before{
+    transform: translateY(-4px);
+}
+
+.menu-btn_burger::after{
+    transform: translateY(4px);
+}
+.headline{
+  position: absolute;
+  top: 270px;
+  left: 40px;
+}
+
+.catchphrase{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.article-title{
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 50px;
+    line-height: 45px;
+    text-align: left;
+    letter-spacing: -4px;
+}
+
+.replay{
+    border: solid white 2px;
+    width: 175px;
+    height: 55px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
